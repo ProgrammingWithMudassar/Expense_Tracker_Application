@@ -7,24 +7,33 @@ const theme = createTheme({
   palette: {
     background: {
       default: "#eee",
-      custom: "#0A4DAA"
     },
-    mode: 'light',
     primary: {
-      main: '#000000',
+      main: '#fff',
     },
-    secondary: {
-      main: "#FFFFFF"
+    myColor: {
+      main: "#fff",
+      dark:"#000000",
+      green:"#009242"
     },
-    tirtionary: {
-      main: "#0A4DAA"
+    pink: {
+      deep: '#FF1493',
+      hot: '#FF69B4',
+      medium: '#C71585',
+      pale: '#DB7093',
+      light: '#FFB6C1',
     },
-    black: {
-      main: '#000000'
-    }
   },
   typography: {
     fontFamily: font,
+    h3: {
+      '@media (min-width:600px)': {
+        fontSize: '2.5rem', // Change the font size for md screens
+      },
+      '@media (max-width:599.95px)': {
+        fontSize: '1.2rem', // Change the font size for xs screens
+      },
+    },
     button: {
       background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
       border: 0,
@@ -34,9 +43,6 @@ const theme = createTheme({
       padding: '10px',
       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
       textTransform: 'none',
-      '&': {
-        color: red
-      }
     }
   },
   root: {
@@ -48,16 +54,16 @@ const theme = createTheme({
     }
   },
   '@global': {
-      '*::-webkit-scrollbar': {
-        width: '0px',
-        height: '10px',
-      },
-      '*::-webkit-scrollbar-thumb': {
-        width: '0rem',
-        backgroundColor: '#D5073C',
-        borderRadius: "2rem",
-      },
+    '*::-webkit-scrollbar': {
+      width: '0px',
+      height: '10px',
     },
+    '*::-webkit-scrollbar-thumb': {
+      width: '0rem',
+      backgroundColor: '#D5073C',
+      borderRadius: "2rem",
+    },
+  },
 });
 
 export default theme;

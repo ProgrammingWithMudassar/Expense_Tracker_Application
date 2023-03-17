@@ -1,0 +1,9 @@
+.chart{
+    position: relative;
+}
+.text{
+    position: absolute;
+    left: 46%;
+    top: 40%;
+    text-align: center;
+}

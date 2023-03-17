@@ -1,0 +1,8 @@
+.header{
+    width: 100%;
+    text-align: center;
+    background-color: var(--BoxBackground--color);
+    padding: 1.2rem 0;
+    margin-top: 1rem;
+    border-radius: 30px;
+}
