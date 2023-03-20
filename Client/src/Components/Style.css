@@ -7,3 +7,18 @@
     top: 40%;
     text-align: center;
 }
+.input{
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+.no-arrows::-webkit-inner-spin-button,
+.no-arrows::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.no-arrows {
+  -moz-appearance: textfield;
+}

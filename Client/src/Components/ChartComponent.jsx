@@ -1,8 +1,9 @@
 import React from 'react'
 import { Doughnut } from 'react-chartjs-2'
 import { Chart, ArcElement } from 'chart.js'
-import{ Typography, Stack,Box}from '@mui/material'
+import { Typography, Stack, Box } from '@mui/material'
 import "./Style.css"
+import Labels from './Labels'
 
 
 Chart.register(ArcElement);
@@ -13,7 +14,7 @@ const config = {
     datasets: [{
       data: [300, 50, 100],
       backgroundColor: [
-        'rgb(255, 99, 132)',
+        '#FE6B8B',
         'rgb(54, 162, 235)',
         'rgb(255, 205, 86)'
       ],
@@ -29,11 +30,19 @@ const config = {
 
 const ChartComponent = () => {
   return (
-    <Box className='chart'>
-      <Doughnut {...config}></Doughnut>
-      <Box className='text'>
-        <Typography variant="body1" color="myColor.dark" fontWeight={600}>Total</Typography>
-        <Typography variant="body1" color="myColor.green" fontWeight={600}>$0</Typography>
+    <Box >
+      <Box className='chart'>
+        <Box >
+          <Doughnut {...config}></Doughnut>
+        </Box>
+        <Box className='text'>
+          <Typography variant="body1" color="myColor.dark" fontWeight={600}>Total</Typography>
+          <Typography variant="body1" color="myColor.green" fontWeight={600}>$0</Typography>
+        </Box>
+      </Box>
+
+      <Box>
+        <Labels />
       </Box>
     </Box>
   )
