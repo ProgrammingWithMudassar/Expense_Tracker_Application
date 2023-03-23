@@ -2,7 +2,7 @@ import React from 'react'
 import { Box, Typography, Container, Grid, } from '@mui/material'
 import './Style.css'
 import {
-  ChartComponent,Form
+  ChartComponent,Form, List
 } from '../Components/index.js'
 
 
@@ -19,6 +19,7 @@ const Home = () => {
           </Grid>
           <Grid item xs={12} md={6}>
             <Form />
+            <List />
           </Grid>
         </Grid>
       </Container>
