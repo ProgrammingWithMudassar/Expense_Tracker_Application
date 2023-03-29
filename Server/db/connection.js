@@ -13,5 +13,4 @@ const conn = mongoose.connect(process.env.ALTAS_URI)
     .catch((err) => {
         console.log("Connection Failed");
     })
-
 export default conn;
