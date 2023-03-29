@@ -25,7 +25,7 @@ const Form = () => {
                         <option value="Saving" >Saving</option>
                     </select>
                     <input type="number" placeholder='Amount' className='input no-arrows' {...register('Amount', { required: true })} />
-                    <Button variant='contained' color='myColor' type="submit" sx={{ height: '40px' }}>Calcolate</Button>
+                    <Button variant='contained'  type="submit" sx={{ height: '40px',color:"myColor.main" }}>Calcolate</Button>
                 </Stack>
             </form>
         </Box>
