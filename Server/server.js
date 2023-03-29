@@ -27,8 +27,7 @@ app.use("/expense", routes)
 //db connection
 conn.then(db => {
     if (!db) return process.exit(1);
-
-
+    
     app.listen(
         port,
         () => {
